@@ -1,0 +1,8 @@
+if __name__ == '__main__':
+    n = int(input())
+    i = list(range(20))
+    for i in range(n):
+        if i < n:
+            print(i*i)
+        else:
+            pass
