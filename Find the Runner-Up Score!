@@ -1,0 +1,10 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    
+    ordlist = sorted(arr, key=int)
+    highscore = ordlist[-1]
+    for i in range(n,-1,-1):
+        if highscore > ordlist[i-1]:
+            print (ordlist[i-1])
+            break
